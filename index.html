@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Prevenção à Falsificação - PROCON</title>
+    <style>
+        :root {
+            --verde-procon: #76b72d;
+            --verde-medio: #289c4f;
+            --verde-profundo: #003c2d;
+            --vermelho-atencao: #ce2f28;
+            --claro-1: #f5f6db;
+            --claro-2: #c7dfcc;
+            --claro-3: #d9ebe6;
+            --claro-4: #faeaea;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--claro-1);
+            color: var(--verde-profundo);
+        }
+
+        header {
+            background-color: var(--verde-profundo);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 { margin: 0; font-size: 2.2rem; font-weight: bold; }
+        header p { margin-top: 10px; font-size: 1rem; opacity: 0.9; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 30px 20px; }
+
+        .box-texto {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 8px solid var(--verde-procon);
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .box-texto p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+        }
+
+        .proibicao-alerta {
+            color: var(--vermelho-atencao);
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .alerta-download {
+            background-color: var(--claro-4);
+            border: 1px solid var(--vermelho-atencao);
+            color: var(--vermelho-atencao);
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .pdf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid var(--claro-2);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+
+        .card:hover { transform: scale(1.02); }
+
+        .card-header {
+            background-color: var(--verde-medio);
+            color: white;
+            padding: 12px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-align: center;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pdf-viewer {
+            position: relative;
+            padding-bottom: 75%; 
+            height: 0;
+            overflow: hidden;
+            background: #eee;
+        }
+
+        .pdf-viewer iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 200%; border: 0;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 30px;
+            text-align: center;
+            background-color: var(--verde-profundo);
+            color: white;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portal de Prevenção à Falsificação</h1>
+    <p>Material Educativo para o Consumidor - PROCON</p>
+</header>
+
+<div class="container">
+    
+    <section class="box-texto">
+        <p>Este espaço reúne guias visuais detalhados para ajudar você a distinguir produtos originais de falsificações. A educação é a melhor ferramenta para garantir uma compra segura e proteger seus direitos.
+        <span class="proibicao-alerta">A reprodução ou divulgação não autorizada está expressamente proibida.</span></p>
+    </section>
+
+    <div class="alerta-download">
+        ⚠️ Atenção: Utilize os controles nos cards abaixo para visualizar os arquivos. O download é restrito para uso institucional.
+    </div>
+
+    <div class="pdf-grid">
+        
+        <div class="card">
+            <div class="card-header">Atuação da Polícia Científica de SC</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/14CVvMsZGpG7B8RPR3_QqKMnuLbhDkjPO/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Capacitação de Agentes Públicos</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1KwfqVjpKDsFfYslvkll-Noi_SzZNLpIR/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Destinação Adequada de Embalagens</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1aQcA8gfRrbnzCR_eFuYQ72xQUBCuWQb5/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Ecossistema de Combate - Polícia Civil</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/12sxcHo2v1Z5HDC7Pg5bomqJhZO4-Ti4z/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Produtos Controlados (PCSC GEFID)</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1hTeWBrkWB1BQjLqENdghwI40KJDOwmJb/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Pirataria de Bebidas no Brasil</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1kYDOCSTcv-Ywxbg4iCn61hS4FhXTEr-f/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Programa Nacional de Treinamento</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1h_RdI7Vz_RKLrErV9s61IDuwRNIkhME0/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Combate ao Mercado Ilegal (ABRABE)</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1eN3ZQvvZjD4VQwe-54bkOF4iMHB6gCSc/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Workshop David do Nascimento</div>
+            <div class="pdf-viewer">
+                <iframe src="https://drive.google.com/file/d/1UvCpBjmHUOFV5-JFGPW6VTKDqubVXkDk/preview"></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">Material Adicional em Breve</div>
+            <div class="pdf-viewer">
+                <iframe src="about:blank"></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p><strong>PROCON - Proteção e Defesa do Consumidor</strong></p>
+    <p>2026 • Documentação Oficial contra o Mercado Ilegal</p>
+</footer>
+
+</body>
+</html>
